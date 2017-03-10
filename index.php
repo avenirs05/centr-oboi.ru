@@ -3,37 +3,17 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">  <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<meta name="format-detection" content="telephone=no" />
 	<title>Обои Центр</title>
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="style.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-	<script src="js/jquery-3.1.1.min.js"></script>
-	<script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
-	
-	<!-- <script> -->
-		<!-- $(function () { -->
-			
-			<!-- // Создает объект карты Королева 30 Д -->
-			<!-- var mapMsc = new YMaps.Map(YMaps.jQuery("#ymaps-msc")[0]); -->
-
-			<!-- // Создает объект карты Стачки -->
-			<!-- var mapSpb = new YMaps.Map(YMaps.jQuery("#ymaps-spb")[0]); -->
-
-			<!-- // Инициализирует карту Королева 30 Д -->
-			<!-- mapMsc.setCenter(new YMaps.GeoPoint(47.29572291165199,39.718462466270466), 10); -->
-
-			<!-- // Инициализирует карту Стачки -->
-			<!-- mapSpb.setCenter(new YMaps.GeoPoint(30.313,59.938), 10);			 -->
-		<!-- }); -->
-	<!-- </script> -->
+	<?php wp_head(); ?>
 </head>
 <body>
 
 <div class="container-fluid header">
-	<div class="row">
+	<div class="row header-fixed">
         <div class="col-md-6 logo"><a href="#">ОБОИ ЦЕНТР</a></div>
-        <div class="col-md-6">
+        <div class="col-md-6" id="right-corner">
 			<div class="phone-digits text-right">
 				<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
 				<span>+7 (863) 231 10 99</span>			
@@ -46,13 +26,13 @@
 </div>
 
 <div class="container-fluid menu-wrapper">
-	<div class="row">
+	<div class="row menu-wrapper-fixed">
         <div class="col-md-10 col-md-offset-1 menu">
-			<div><a href="#">Главная</a></div>
-			<div><a href="#">Обои</a></div>
-			<div><a href="#">Ламинат</a></div>
-			<div><a href="#">Фрески</a></div>
-			<div><a href="#">Контакты</a></div>
+			<div><a href="index.html">Главная</a></div>
+			<div><a href="page-oboi.php">Обои</a></div>
+			<div><a href="page-laminat.php">Ламинат</a></div>
+			<div><a href="page-freski.php">Фрески</a></div>
+			<div><a href="page-contacts.php">Контакты</a></div>
 		</div>
 	</div>
 </div>
@@ -72,7 +52,7 @@
 			<h2 class="text-center">Почему мы?</h2>
 			<p>Имея многолетний опыт работы в сфере розничной и оптовой продажи обоев и ламинита, нами были тщательно отобраны ведущие мировые производители стеновых и напольных покрытий. Ассортимент наших магазинов поражает разнообразием товаров в разных стилях и направлениях. Представлены классика, модерн, арт-деко, барокко, винтаж, восточный, жуи, лофт, молодежный, морской, неоклассика, прованс, психоделика, ретро, романтика, современный, флористика, футуристический, хай-тек, шебби шик, эклектика и др.</p>			
 			<p>Обои Центр – это мировой океан оттенков и стилевых решений, это тысячи коллекций обоев: виниловые, флизелиновые, бумажные, текстильные, под покраску, с флоком, с бисерным покрытием, от эконом до премиум класса. В продаже самые востребованные мировые бренды от лучших производителей обоев разных стран мира Италии, Германии, Бельгии, США, Кореи, России, Украины.</p>
-			<p>Тесное сотрудничество  с лучшими мировыми производителями обоев Zambaiti Parati, Emiliana Parati, Domus Parati, Sirpi, Sirpi Textil, Andrea Rossi, Quarta Parete, Italreflexes, Modello Otti, Portofino, G.L. Design, Seabrook, York, 5th Avenue,  Marburg, Rasch, Rasch Textil, AS Creation, Artdecorium, P+S International, Calcuta, Fipar, Erismann, Палитра, Home Color, Prestige Color, АРТ, Авангарди др. позволяет нам значительно выделяться в розничной и оптовой торговле обоями.</p>
+			<p>Тесное сотрудничество  с лучшими мировыми производителями обоев Zambaiti Parati, Emiliana Parati, Domus Parati, Sirpi, Sirpi Textil, Andrea Rossi, Quarta Parete, Italreflexes, Modello Otti, Portofino, G.L. Design, Seabrook, York, 5th Avenue,  Marburg, Rasch, Rasch Textil, AS Creation, Artdecorium, P+S International, Calcuta, Fipar, Erismann, Палитра, Home Color, Prestige Color, АРТ, Авангарди  и др. позволяет нам значительно выделяться в розничной и оптовой торговле обоями.</p>
 			<p>В наших салонах такие фабрики как Affresco, Renaissance Fresco, CasaBella, Фрески ОРТО предлагают Вашему вниманию фрески, фотопанно, барельефы, картины, бесшовные обои ручной работы, бисерные фрески с различной тематикой и фактурой. Это и пейзажи, и сюжеты, и цветы, и другие дизайны по Вашему вкусу и выбранному стилю.</p>
 			<p>Особое внимание заслуживают  коллекции Botanika, Ethno, Empire, Fabrika19, Fabrika19/53, Infinito от  Affresco, в которых дизайнеры постарались возродить искусство настенной живописи в современном дизайне, взяв за основу классические рисунки и гобелены, выполненные в оригинальной технике настенных панно ручной работы с объемным рельефом.</p>
 			<h3 class="text-center">Наши преимущества:</h3>
@@ -103,7 +83,7 @@
 					<h5>Ростов-на-Дону, пр. Стачки 123/1</h5>
 					<p>Тел.: +7 (863) 231 10 99</p>
 					<div>
-						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10841.041176922141!2d39.655662!3d47.211489!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDfCsDEyJzQxLjQiTiAzOcKwMzknMjAuNCJF!5e0!3m2!1sru!2sus!4v1488711983311" width="390" height="330" frameborder="0" style="border:0" allowfullscreen></iframe>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10841.041176922141!2d39.655662!3d47.211489!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDfCsDEyJzQxLjQiTiAzOcKwMzknMjAuNCJF!5e0!3m2!1sru!2sus!4v1488711983311"width="390" height="330" frameborder="0" style="border:0" allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>
@@ -112,7 +92,24 @@
 	</div>
 </div>
 
+<script>
 
+	$(function () {
+
+    	var location = window.location.href;  
+		
+ 		$('.menu a').each(function () {						
+        	var link = $(this).attr('href');			
+        	if (location == link) { 				
+            	$(this).addClass('change-color');                
+        	}
+    	});
+			
+	});
+
+</script>
+
+<?php wp_footer(); ?>
 </body>
 </html>
 

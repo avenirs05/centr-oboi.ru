@@ -37,6 +37,14 @@ a {
 	color: #FFFFFF;
 }
 
+.header-fixed {
+	position: fixed;
+	top: 0px;
+	z-index: 120;
+	width: 100%;
+	background-image: url("images/bg_terracotta_micro_circles.jpg");
+} 
+
 .logo {
 	text-shadow: 6px 6px 8px #000000;
 	line-height: 90px;
@@ -50,14 +58,14 @@ a {
 	margin-left: 17%;
 }
 
+#right-corner {
+	margin-top: 3px;
+}
+
 .phone-digits {
 	font-size: 30px;
 	margin-right: 17%;
 }
-
-/* .phone-digits span { */
-	/* margin-right: 17%;  */
-/* } */
 
 .glyphicon {
 	font-size: 25px;
@@ -66,6 +74,14 @@ a {
 .menu-wrapper {
 	background-image: url("images/bg_gray_lattice.jpg");
 	color: #FFFFFF;
+	margin-top: 90px; 
+}
+
+.menu-wrapper-fixed {
+	position: fixed;	
+	z-index: 120;
+	width: 100%;
+	background-image: url("images/bg_gray_lattice.jpg");
 }
 
 .menu {
@@ -83,8 +99,13 @@ a {
 }
 
 .menu a:hover {
-	color: red;
+	color: yellow;
 	text-decoration: underline;
+}
+
+
+.menu a.change-color {
+	color: yellow;
 }
 
 .main-screen {
@@ -164,6 +185,21 @@ a {
 	margin-top: 10px;
 	font-size: 12px;
 }
+
+/* .carousel-control .glyphicon-chevron-left { */
+    /* display: none; */
+    /* left: 10px; */
+    /* margin-left: 0; */
+/* } */
+/* .carousel-control .glyphicon-chevron-right { */
+    /* display: none; */
+    /* right: 10px; */
+    /* margin-right: 0; */
+/* } */
+
+/* .carousel-indicators { */
+	/* display: none; */
+/* } */
 
 @media screen and (max-device-width: 767px) {
 	
