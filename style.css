@@ -9,6 +9,8 @@ Author: admin
 
 body {
 	font-family: Arial, sans-serif;
+	background-image: url("images/bg_home_content.jpg");
+	
 }
 
 ul, li {
@@ -72,21 +74,35 @@ a {
 }
 
 .menu-wrapper {
-	background-image: url("images/bg_gray_lattice.jpg");
-	color: #FFFFFF;
-	margin-top: 90px; 
-}
-
-.menu-wrapper-fixed {
-	position: fixed;	
+	position: fixed;
+	top: 90px; 
 	z-index: 120;
 	width: 100%;
 	background-image: url("images/bg_gray_lattice.jpg");
+	color: #FFFFFF;
+	/* margin-top: 90px;  */
 }
 
-.menu {
+.menu-wrapper-fixed {
+	z-index: 120;
+	background-image: url("images/bg_gray_lattice.jpg");	
+}
+
+/* Элементы, сформированные Wordpress */
+
+#menu-menu {
+	list-style-type: none;
 	display: flex;
 	justify-content: space-between;
+}
+
+#nav_menu-2 {
+	list-style-type: none;
+}
+
+/* Конец Wordpress */
+
+.menu {
 	font-size: 36px;
 	font-family: 'Open Sans Condensed', sans-serif;
 	margin-top: 6px;
@@ -105,7 +121,7 @@ a {
 
 
 .menu a.change-color {
-	color: yellow;
+	color: #CCCC00;
 }
 
 .main-screen {
@@ -118,6 +134,7 @@ a {
 	background-position: left, top;
 	background-size: cover;	
 	height: 77vh;  
+	margin-top: 145px;
 }
 
 .title {
@@ -141,8 +158,9 @@ a {
 	padding-bottom: 10px;
 }
 
-.about-us {
-	background-image: url("images/bg_home_content.jpg");
+#about-us {
+	/* background-image: url("images/bg_home_content.jpg"); */
+	margin-bottom: -20px;
 }
 
 .about-us h2 {
@@ -186,23 +204,132 @@ a {
 	font-size: 12px;
 }
 
-/* .carousel-control .glyphicon-chevron-left { */
-    /* display: none; */
-    /* left: 10px; */
-    /* margin-left: 0; */
-/* } */
-/* .carousel-control .glyphicon-chevron-right { */
-    /* display: none; */
-    /* right: 10px; */
-    /* margin-right: 0; */
-/* } */
+#pages-main {
+	margin-top: 145px;
+	background-image: url("images/bg_home_content.jpg");
+	margin-bottom: -20px;
+}
 
-/* .carousel-indicators { */
-	/* display: none; */
+.content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 10px;
+	margin-bottom: 30px;
+
+} 
+
+.content > a {
+	display: block;
+	width: 160px;
+	height: 207px;
+	/* margin-top: 20px; */
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 40px;
+    margin-bottom: 20px;	
+	background-image: url("images/bg_terracotta_micro_circles.jpg");
+	border-radius: 5px;
+	color: #ffffff;
+	font-size: 18px;
+	text-align: center;
+}
+
+.content > a:hover {
+	background-color: #C1272D;
+	background-image: none;
+}
+
+.content p {
+	margin-top: 15px;	
+}
+
+.content img {
+	border-radius: 4px;	
+	width: 80%;
+}
+
+/* .content a { */
+	/* display: block; */
+	/* height: 100%; */
 /* } */
 
 @media screen and (max-device-width: 767px) {
+	.logo {
+		font-size: 16px;
+		text-shadow: 3px 3px 4px #000000;
+		line-height: 20px;
+		margin-left: 0%;
+	}
 	
+	.phone-digits {
+    	font-size: 12px;
+    	margin-right: 0%;
+	}
+	
+	.glyphicon {
+    	font-size: 11px;
+	}
+	
+	.header-fixed {
+		display: flex;
+		align-items: center;
+	}
+	
+	.logo a {
+		margin-left: 0%;
+	}
+	
+	#right-corner {
+    	margin-top: 5px;
+		margin-bottom: 3px;
+	}
+	
+	.menu-wrapper {
+		top: 42px;
+	}
+	
+	#nav_menu-2 ul.menu {
+		list-style-type: none;
+	}
+	
+	.menu {
+		font-size: 18px;
+	}
+	
+	.main-screen {
+		margin-top: 37px;
+	}
+	
+	.title {
+		border-radius: 3px;
+	}
+	
+	.title p:first-child {
+		font-size: 24px;
+		padding-top: 0px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.title p:last-child {
+		font-size: 20px;
+		margin-top: -15px;
+		padding-bottom: 3px;
+	}
+	
+	.maps-wrapper {
+    	display: block;
+	}
+	
+	.maps-wrapper div:first-child {
+    	margin-right: 0px;
+		margin-bottom: 50px;
+	}
+	
+	#pages-main {
+		margin-top: 65px;
+	}
 }
 
 

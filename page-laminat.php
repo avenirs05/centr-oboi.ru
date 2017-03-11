@@ -1,3 +1,5 @@
-<?php
+<?php get_header(); ?>
 
-echo 'Ламинат';
+<?php echo 'Ламинат'; ?>
+
+<?php get_footer(); ?>

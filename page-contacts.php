@@ -1,3 +1,5 @@
-<?php
+<?php get_header(); ?>
 
-echo 'Контакты';
+<?php echo 'Контакты'; ?>
+
+<?php get_footer(); ?>
