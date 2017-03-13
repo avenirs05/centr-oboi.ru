@@ -1,17 +1,20 @@
 <?php get_header(); ?>
 
-<div class="container-fluid" id="pages-main">
-	<div class="row">
-        <div class="col-md-10 col-md-offset-1 content">
-		
-			<?php $oboi_catalogies = new WP_Query(array ('category_name' => 'oboi_catalogies')); ?>
+<?php global $post; ?>
+<?php $post_slug = $post->post_name; ?>	
 
-			<?php if ($oboi_catalogies->have_posts()) : 
-		  		while ($oboi_catalogies->have_posts()) : 
-			  		$oboi_catalogies->the_post(); ?>	
-					<?php global $post; ?> 
-					<?php $post_slug = $post->post_name; ?>				
-					<a href="<?php echo $post_slug; ?>"><p class="text-center"><?php the_title(); ?></p>
+<?php if ($post_slug == 'oboi') : ?> 
+	<div class="container-fluid" id="pages-main">
+		<div class="row">
+        	<div class="col-md-10 col-md-offset-1 content">
+<?php endif; ?>	
+
+<?php $factories = new WP_Query(array ('category_name' => "$post_slug")); ?>
+	<?php if ($factories->have_posts()) : 
+	  		while ($factories->have_posts()) : 
+			  	    $factories->the_post(); ?>	
+					 <?php $post_slug = $post->post_name; ?>				
+					<a href="http://centr-oboi.loc/<?php echo $post_slug; ?>"><p class="text-center"><?php the_title(); ?></p>
 						<div>
 							<?php the_post_thumbnail(); ?>
 						</div>

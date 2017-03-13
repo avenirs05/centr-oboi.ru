@@ -1,4 +1,5 @@
 ﻿<?php get_header(); ?>
+
 <div class="container-fluid main-screen">
 	<div class="row">
         <div class="col-md-12 title text-center">
@@ -24,4 +25,5 @@
 		</div>
 	</div>
 </div>
+<?php echo 'Хуй'; ?>
 <?php get_footer(); ?>
