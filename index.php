@@ -25,5 +25,5 @@
 		</div>
 	</div>
 </div>
-<?php echo 'Хуй'; ?>
+
 <?php get_footer(); ?>

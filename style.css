@@ -73,7 +73,7 @@ a {
 
 .menu-wrapper {
 	position: fixed;
-	top: 90px; 
+	top: 89px; 
 	z-index: 120;
 	width: 100%;
 	background-image: url("images/bg_gray_lattice.jpg");
@@ -131,7 +131,7 @@ a {
 	background-position: left, top;
 	background-size: cover;	
 	height: 77vh;  
-	margin-top: 145px;
+	margin-top: 144px;
 }
 
 .title {
@@ -226,12 +226,32 @@ a {
 	background-image: url("images/bg_terracotta_micro_circles.jpg");
 	border-radius: 5px;
 	color: #ffffff;
-	font-size: 18px;
+	font-size: 16px;
+	text-align: center;
+}
+
+.content > div {
+	display: block;
+	width: 160px;
+	height: 207px;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 40px;
+    margin-bottom: 20px;	
+	background-image: url("images/bg_terracotta_micro_circles.jpg");
+	border-radius: 5px;
+	color: #ffffff;
+	font-size: 16px;
 	text-align: center;
 }
 
 .content > a:hover {
 	background-color: #C1272D;
+	background-image: none;
+}
+
+.content > a:active {
+	background-color: #000000;
 	background-image: none;
 }
 
@@ -241,8 +261,36 @@ a {
 
 .content img {
 	border-radius: 4px;	
-	width: 80%;
+	width: 140px;
+	height: 140px;
 }
+
+.card-img {
+	float: left;
+	margin-right: 22px;
+	margin-bottom: 20px;
+}
+
+.card-img img {
+	border: 1px solid #000000;	
+	border-radius: 4px;	
+}
+
+.descr-wrapper {
+	margin-top: 50px;
+	margin-bottom: -20px;
+	
+}
+
+.descr-wrapper > div > div {
+	background-color: #ECEEE8;
+	padding-top: 22px;
+	padding-bottom: 12px;
+	padding-right: 22px;
+	padding-left: 22px;
+	border-radius: 7px;
+}
+
 
 
 @media screen and (max-device-width: 767px) {
@@ -320,6 +368,10 @@ a {
 	
 	#pages-main {
 		margin-top: 65px;
+	}
+	
+	.descr-wrapper {
+		margin-top: 15px;
 	}
 }
 

@@ -12,7 +12,7 @@
 
 <div class="container-fluid header">
 	<div class="row header-fixed">
-        <div class="col-xs-6 logo"><a href="#">ОБОИ ЦЕНТР</a></div>
+        <div class="col-xs-6 logo"><a href="http://centr-oboi.loc/">ОБОИ ЦЕНТР</a></div>
         <div class="col-xs-6" id="right-corner">
 			<div class="phone-digits text-right">
 				<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
