@@ -1,13 +1,15 @@
+/*Код отличается от page-laminat.php только тем, что в page-laminat
+есть класс content-laminat
+*/
+
 <?php get_header(); ?>
 
 <?php global $post; ?>
 <?php $post_slug = $post->post_name; ?>	
 
-<?php if ($post_slug == 'oboi') : ?> 
-	<div class="container-fluid" id="pages-main">
-		<div class="row">
-        	<div class="col-md-10 col-md-offset-1 content">
-<?php endif; ?>	
+<div class="container-fluid" id="pages-main">
+	<div class="row">
+       	<div class="col-md-10 col-md-offset-1 content-oboi">
 
 <?php $factories = new WP_Query(array ('category_name' => "$post_slug")); ?>
 	<?php if ($factories->have_posts()) : 
@@ -20,8 +22,7 @@
 						</div>
 					</a>					
 				<?php endwhile; ?>
-			<?php endif; ?>		
-			
+			<?php endif; ?>
 		</div>
 	</div>
 </div>
