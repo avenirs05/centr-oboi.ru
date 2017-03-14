@@ -28,16 +28,7 @@
 <div class="container-fluid menu-wrapper">
 	<div class="row menu-wrapper-fixed">		
         <div class="col-md-10 col-md-offset-1 menu">
-			<?php dynamic_sidebar('menu-header'); ?>	
-			
-		<!--
-			<div><a href="index.html">Главная</a></div>
-			<div><a href="page-oboi.php">Обои</a></div>
-			<div><a href="page-laminat.php">Ламинат</a></div>
-			<div><a href="page-freski.php">Фрески</a></div>
-			<div><a href="page-contacts.php">Контакты</a></div>
-		-->
-		</div>
-	
+			<?php dynamic_sidebar('menu-header'); ?>
+			</div>	
 	</div>
 </div>

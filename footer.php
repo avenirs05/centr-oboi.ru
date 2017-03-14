@@ -1,6 +1,6 @@
 ﻿<div class="container-fluid footer">
 	<div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-10 col-md-offset-1">
 			<h2>Контакты</h2>
 			<hr>
 			<div class="maps-wrapper">

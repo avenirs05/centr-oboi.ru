@@ -284,12 +284,15 @@ a {
 
 .descr-wrapper > div > div {
 	background-color: #ECEEE8;
-	padding-top: 22px;
-	padding-bottom: 12px;
-	padding-right: 22px;
-	padding-left: 22px;
+	overflow: hidden;
+	padding-top: 25px;
+	padding-bottom: 10px;
+	padding-right: 25px;
+	padding-left: 25px;
 	border-radius: 7px;
 }
+
+
 
 
 

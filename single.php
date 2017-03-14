@@ -4,6 +4,7 @@
 	<div class="row descr-wrapper">
         <div class="col-md-10 col-md-offset-1">
 			<div>
+			
 			<?php global $post; ?>
 			<?php $post_slug = $post->post_name; ?>	
 			<?php $oboi = new WP_Query(array ('category_name' => "$post_slug")); ?>
@@ -22,6 +23,7 @@
 					<?php endif; ?>				
 				<?php endwhile; ?>
 			<?php endif; ?>
+			
 			</div>
 		</div>
 	</div>
