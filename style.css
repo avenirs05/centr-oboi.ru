@@ -267,8 +267,8 @@ a {
 
 .card-img {
 	float: left;
-	margin-right: 22px;
-	margin-bottom: 20px;
+	margin-right: 25px;
+	margin-bottom: 10px;
 }
 
 .card-img img {
@@ -293,7 +293,8 @@ a {
 }
 
 .content-laminat {
-	margin-bottom: 60px;	
+	margin-bottom: 40px;
+	margin-top: 0px;	
 }
 
 .content-laminat > a {
