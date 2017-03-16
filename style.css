@@ -212,7 +212,6 @@ a {
 	justify-content: center;
 	margin-top: 10px;
 	margin-bottom: 30px;
-
 } 
 
 .content-oboi > a {
@@ -317,7 +316,7 @@ a {
 }
 
 .content-laminat img {
-	border-radius: 4px;	
+	border-radius: 0px;	
 	width: 210px;
 	height: 130px;
 }
@@ -333,11 +332,75 @@ a {
 	margin-bottom: 0px;
 }
 
+.content-freski {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+.content-freski .card {
+	width: 260px;
+	height: 170px;
+}
+
+.content-freski > a {
+	width: 260px;
+	height: 170px;
+}
+
+.content-freski img {
+	width: 260px;
+	height: 170px;
+	border-radius: 0px;
+}
+
+.content-freski > div {
+	background-image: none;
+	background-color: #F3E4DD;
+	width: 260px;
+	height: 290px;
+	margin-bottom: 0px;
+	margin-top: 40px;
+	margin-left: 20px;
+	margin-right: 20px;	
+	font-size: 12px;
+	color: #000000;
+	font-style: italic;	
+}
+
+.content-freski p {
+	display: flex;
+    align-items: center;
+	background: #F3E4DD;
+	height: 120px;
+	margin-top: 0px;
+}
+
+.content-freski span {
+    padding-left: 5px;
+    padding-right: 5px;
+	text-align: center;
+}
 
 
 
 
 
+@media screen and (max-device-width: 989px) {
+	.logo {
+		font-size: 36px;
+	}
+	
+	.logo a {
+	    margin-left: 0;
+	}
+	
+	.phone-digits {
+        margin-right: 0;
+}
+}
 
 @media screen and (max-device-width: 767px) {
 	.logo {
@@ -419,7 +482,37 @@ a {
 	.descr-wrapper {
 		margin-top: 15px;
 	}
+	
+	.descr-wrapper > div {
+		margin-bottom: 40px;
+	}
+	
+	.card-img {
+    	float: none;
+		text-align: center;
+		margin-right: 0;
+		margin-top: -10px;
+	}
+	
+	.content-oboi {
+		margin-top: -20px;
+	}
+	
+	.content-oboi > a {
+		margin-bottom: 0px;
+		margin-top: 20px;
+	}
+	
+	.content-freski {	
+		margin-top: -10px; 
+	}
+	
+	/* .content-freski > div {	 */
+		/* margin-bottom: -25px; */
+		/* margin-top: 85px;  */
+	/* } */
 }
+
 
 
 
