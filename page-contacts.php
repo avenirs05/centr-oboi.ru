@@ -1,5 +1,3 @@
 <?php get_header(); ?>
-
-<?php echo 'Контакты'; ?>
-
+<div class="empty"></div>
 <?php get_footer(); ?>
