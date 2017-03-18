@@ -12,7 +12,7 @@
 	  		while ($factories->have_posts()) : 
 			  	    $factories->the_post(); ?>	
 					 <?php $post_slug = $post->post_name; ?>				
-					<a href="http://centr-oboi.loc/<?php echo $post_slug; ?>"><p class="text-center"></p>
+					<a href="<?php echo get_bloginfo('url') . '/'; ?><?php echo $post_slug; ?>"><p class="text-center"></p>
 						<div>
 							<?php the_post_thumbnail(); ?>
 						</div>

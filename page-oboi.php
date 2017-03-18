@@ -1,7 +1,3 @@
-/*Код отличается от page-laminat.php только тем, что в page-laminat
-есть класс content-laminat
-*/
-
 <?php get_header(); ?>
 
 <?php global $post; ?>
@@ -16,7 +12,7 @@
 	  		while ($factories->have_posts()) : 
 			  	    $factories->the_post(); ?>	
 					 <?php $post_slug = $post->post_name; ?>				
-					<a href="http://centr-oboi.loc/<?php echo $post_slug; ?>"><p class="text-center"><?php the_title(); ?></p>
+					<a href="<?php echo get_bloginfo('url') . '/'; ?><?php echo $post_slug; ?>"><p class="text-center"><?php the_title(); ?></p>
 						<div>
 							<?php the_post_thumbnail(); ?>
 						</div>

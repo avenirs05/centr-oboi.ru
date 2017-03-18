@@ -6,22 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
 	<meta name="format-detection" content="telephone=no" />
 	<title><?php bloginfo('name'); ?></title>
-	<script>
+	<style>    
+        @font-face {
+            font-family: "OpenSansCondensedLight";
+            src: url("<?php bloginfo('template_url')?>/fonts/OpenSans-CondLight.ttf") format("truetype");
+            font-style: normal;
+            font-weight: normal;  
+        }
+    </style>
 
-	$(function () {
-
-    	var location = window.location.href;  
-		
- 		$('.menu a').each(function () {						
-        	var link = $(this).attr('href');			
-        	if (location == link) { 				
-            	$(this).addClass('change-color');                
-        	}
-    	});
-			
-	});
-
-</script>
 	
 	<?php wp_head(); wp_title(); ?>
 </head>

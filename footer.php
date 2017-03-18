@@ -32,14 +32,14 @@
 
 <script>
 
-	$(function () {
+	jQuery(function () {
 
     	var location = window.location.href;  
 		
- 		$('.menu a').each(function () {						
-        	var link = $(this).attr('href');			
+ 		jQuery('.menu a').each(function () {						
+        	var link = jQuery(this).attr('href');			
         	if (location == link) { 				
-            	$(this).addClass('change-color');                
+            	jQuery(this).addClass('change-color');                
         	}
     	});
 			
